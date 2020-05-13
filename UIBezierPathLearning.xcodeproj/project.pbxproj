@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D14BAB9E1AA8223972145B /* Pods_UIBezierPathLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D035B02258FED4C116F9F15 /* Pods_UIBezierPathLearning.framework */; };
 		2EF2C708246C237F005B368E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C707246C237F005B368E /* AppDelegate.swift */; };
 		2EF2C70A246C237F005B368E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C709246C237F005B368E /* SceneDelegate.swift */; };
 		2EF2C70C246C237F005B368E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C70B246C237F005B368E /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03D015D80D3C983B10C42DC7 /* Pods-UIBezierPathLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBezierPathLearning.debug.xcconfig"; path = "Target Support Files/Pods-UIBezierPathLearning/Pods-UIBezierPathLearning.debug.xcconfig"; sourceTree = "<group>"; };
 		2EF2C704246C237F005B368E /* UIBezierPathLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIBezierPathLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF2C707246C237F005B368E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EF2C709246C237F005B368E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		2EF2C710246C2382005B368E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EF2C713246C2383005B368E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EF2C715246C2383005B368E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D035B02258FED4C116F9F15 /* Pods_UIBezierPathLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIBezierPathLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F845037F13A356579DE4AF74 /* Pods-UIBezierPathLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBezierPathLearning.release.xcconfig"; path = "Target Support Files/Pods-UIBezierPathLearning/Pods-UIBezierPathLearning.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D14BAB9E1AA8223972145B /* Pods_UIBezierPathLearning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2EF2C706246C237F005B368E /* UIBezierPathLearning */,
 				2EF2C705246C237F005B368E /* Products */,
+				6B534F0A56D4FF1E8C1991A3 /* Pods */,
+				BA72551AC9FFC1A14A339BC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = UIBezierPathLearning;
 			sourceTree = "<group>";
 		};
+		6B534F0A56D4FF1E8C1991A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03D015D80D3C983B10C42DC7 /* Pods-UIBezierPathLearning.debug.xcconfig */,
+				F845037F13A356579DE4AF74 /* Pods-UIBezierPathLearning.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA72551AC9FFC1A14A339BC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D035B02258FED4C116F9F15 /* Pods_UIBezierPathLearning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EF2C718246C2383005B368E /* Build configuration list for PBXNativeTarget "UIBezierPathLearning" */;
 			buildPhases = (
+				D4050442C0A6B8972011F24E /* [CP] Check Pods Manifest.lock */,
 				2EF2C700246C237F005B368E /* Sources */,
 				2EF2C701246C237F005B368E /* Frameworks */,
 				2EF2C702246C237F005B368E /* Resources */,
+				3FDF5F12C81E7A1C5104092D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FDF5F12C81E7A1C5104092D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIBezierPathLearning/Pods-UIBezierPathLearning-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIBezierPathLearning/Pods-UIBezierPathLearning-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIBezierPathLearning/Pods-UIBezierPathLearning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4050442C0A6B8972011F24E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIBezierPathLearning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2EF2C700246C237F005B368E /* Sources */ = {
@@ -282,11 +350,13 @@
 		};
 		2EF2C719246C2383005B368E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03D015D80D3C983B10C42DC7 /* Pods-UIBezierPathLearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6K9Z395B8F;
 				INFOPLIST_FILE = UIBezierPathLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +370,13 @@
 		};
 		2EF2C71A246C2383005B368E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F845037F13A356579DE4AF74 /* Pods-UIBezierPathLearning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6K9Z395B8F;
 				INFOPLIST_FILE = UIBezierPathLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
