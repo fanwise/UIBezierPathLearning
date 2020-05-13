@@ -32,13 +32,15 @@ class Rect: UIView {
         let color = UIColor.red
         color.set()
         let path = UIBezierPath()
-        
-        path.move(to: .zero)
-        path.addLine(to: CGPoint(x: rect.width, y: rect.height))
-        
         path.lineWidth = 2
         path.lineCapStyle = .round
         path.lineJoinStyle = .round
-        path.stroke()
+        
+        path.move(to: CGPoint(x: 0, y: rect.height))
+        path.addLine(to: CGPoint(x: rect.width/2, y: 0))
+        path.addLine(to: CGPoint(x: rect.width, y: rect.height))
+        path.close()
+        
+        path.fill()
     }
 }
