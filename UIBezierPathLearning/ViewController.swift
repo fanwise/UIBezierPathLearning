@@ -31,7 +31,9 @@ class Rect: UIView {
         super.draw(rect)
         let color = UIColor.red
         color.set()
-        let path = UIBezierPath(ovalIn: rect)
+        let path = UIBezierPath(arcCenter: CGPoint(x: rect.width, y: rect.height/2), radius: rect.width/2,
+                                startAngle: .pi/2, endAngle: .pi*3/2, clockwise: true)
+        
         path.lineWidth = 2
         path.lineCapStyle = .round
         path.lineJoinStyle = .round
